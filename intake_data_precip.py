@@ -7,7 +7,7 @@ class intake_data_precip:
 
     def intake(self, reservoirs, lookback):
         # create the file root
-        file_root = "C:\\GitHub\\ca_reserviors"
+        file_root = "C:\\GitHub\\ca_reservoirs"
 
         # set up the dataset
         columns = [

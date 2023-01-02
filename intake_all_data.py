@@ -7,7 +7,7 @@ from intake_data_reservoir import intake_data_reservoir
 
 # reservoirs to track
 reservoirs = ["ORO", "SHA"]
-lookback = 5
+lookback = 90
 
 # initiate the classes
 intake_precip = intake_data_precip()
