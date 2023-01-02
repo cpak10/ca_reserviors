@@ -7,4 +7,4 @@ This repository includes scripts to scrape water and precipitation levels at sel
 
 ## Deployment
 * Run the following script to create two CSV files for precipitation and reservoir data: intake_all_data.py
-* plot_data.py will plot the precipitation and water levels at a select reservoir.
+* plot_precip_water_change.py will plot the precipitation and water levels at a select reservoir.
