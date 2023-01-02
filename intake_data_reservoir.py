@@ -74,4 +74,4 @@ class intake_data_reservoir:
                                 data_reservoirs.loc[index_row, columns[(index_column + 1)]] = cell.text
                         index_row += 1
 
-        data_reservoirs.to_csv(f"{file_root}\\working\\reservoir_levels_{today.strftime('%Y%m%d')}")
+        data_reservoirs.to_csv(f"{file_root}\\working\\reservoir_levels_{today.strftime('%Y%m%d')}.csv")

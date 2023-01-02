@@ -69,4 +69,4 @@ class intake_data_precip:
                                 data_precip.loc[index_row, columns[(index_column + 1)]] = cell.text
                         index_row += 1
 
-        data_precip.to_csv(f"{file_root}\\working\\precip_levels_{today.strftime('%Y%m%d')}")
+        data_precip.to_csv(f"{file_root}\\working\\precip_levels_{today.strftime('%Y%m%d')}.csv")
