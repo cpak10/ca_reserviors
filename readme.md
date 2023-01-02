@@ -6,4 +6,5 @@ This repository includes scripts to scrape water and precipitation levels at sel
 * The reservoir data comes from the following location: https://cdec.water.ca.gov/reportapp/javareports?name=RES
 
 ## Deployment
-Run the following script to create two CSV files for precipitation and reservoir data: intake_all_data.py
+* Run the following script to create two CSV files for precipitation and reservoir data: intake_all_data.py
+* plot_data.py will plot the precipitation and water levels at a select reservoir.
