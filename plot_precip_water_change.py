@@ -2,9 +2,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # filters
-reservoir = "ORO"
-reservoir_full_name = "Oroville Reservoir Last 90 Days"
-date = "20230101"
+reservoir = "SHA"
+reservoir_full_name = "Shasta Reservoir Last 90 Days"
+date = "20230102"
 
 # file root
 file_root = "C:\\GitHub\\ca_reservoirs"
