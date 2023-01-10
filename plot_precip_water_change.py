@@ -2,9 +2,9 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # filters
-reservoir = "ORO"
-reservoir_full_name = "Oroville Reservoir Last 90 Days"
-date = "20230105"
+reservoir = "SHA"
+reservoir_full_name = "Shasta Reservoir Last 90 Days"
+date = "20230110"
 sw_replace_zero = 1
 reservoir_column = "storage_af"
 reservoir_column_lab = "Storage"
@@ -45,6 +45,7 @@ if sw_total_capacity == 1:
     ax1.axhline(data_reservoir_filt.loc[0, "capacity_af"], linestyle = "--", color = "g", alpha = .75, label = "Total Capacity")
 if sw_historic_line == 1:
     ax1.axhline(data_reservoir_filt.loc[0, "average_storage"], linestyle = "--", color = "b", alpha = .75, label = "Historic Level")
+ax1.set_ylim(bottom = 0)
 
 # plot the bar chart
 ax2.bar(data_precip_filt["date_f"], data_precip_filt["precip_24"], width = 0.9, alpha = .5, label = "Precipitation")
