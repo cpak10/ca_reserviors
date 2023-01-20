@@ -2,16 +2,18 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 # filters
-reservoir = "SHA"
-reservoir_full_name = "Shasta Reservoir Last 90 Days"
-date = "20230110"
-sw_replace_zero = 1
-reservoir_column = "storage_af"
-reservoir_column_lab = "Storage"
-reservoir_y_lab = "Storage (Million Acre Feet)"
-sw_zero_line = 0
-sw_historic_line = 1
-sw_total_capacity = 1
+reservoir = input("INPUT - Enter reservoir code (e.g. SHA): ")
+reservoir_spelled = input("INPUT - Enter reservoir name (e.g. Shasta): ")
+number_days_lookback = int(input("INPUT - Enter number of days lookback: "))
+reservoir_full_name = f"{reservoir_spelled} Reservoir Last {number_days_lookback} Days"
+date = input("INPUT - Enter date of data pull (e.g. 20230119): ")
+reservoir_column = input("INPUT - Enter variable name for y-axis (e.g. storage_af): ")
+reservoir_column_lab = input("INPUT - Enter name for y-axis (e.g. Storage): ")
+reservoir_y_lab = input("INPUT - Enter name for y-axis label (e.g. Storage (Million Acre Feet)): ")
+sw_replace_zero = int(input("INPUT - Enter '1' to replace missing zeros in reservoir data, else '0': "))
+sw_zero_line = int(input("INPUT - Enter '1' to add a zero line to plot, else '0': "))
+sw_historic_line = int(input("INPUT - Enter '1' to add a historic line to plot, else '0': "))
+sw_total_capacity = int(input("INPUT - Enter '1' to add a total capacity line to plot, else '0': "))
 
 # file root
 file_root = "C:\\GitHub\\ca_reservoirs"

@@ -6,8 +6,9 @@ from intake_data_precip import intake_data_precip
 from intake_data_reservoir import intake_data_reservoir
 
 # reservoirs to track
-reservoirs = ["ORO", "SHA"]
-lookback = 90
+input_reservoirs = input("INPUT - Enter list of reservoirs codes (e.g. ORO, SHA): ")
+reservoirs = list(input_reservoirs.split(", "))
+lookback = int(input("INPUT - Enter lookback period in days: "))
 
 # initiate the classes
 intake_precip = intake_data_precip()
